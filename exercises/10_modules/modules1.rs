@@ -3,15 +3,14 @@
 // Execute `rustlings hint modules1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 mod sausage_factory {
     // Don't let anybody outside of this module see this!
-    fn get_secret_recipe() -> String {
+    pub fn get_secret_recipe() -> String {
         String::from("Ginger")
     }
 
-    fn make_sausage() {
+    pub fn make_sausage() {
         get_secret_recipe();
         println!("sausage!");
     }
@@ -20,3 +19,7 @@ mod sausage_factory {
 fn main() {
     sausage_factory::make_sausage();
 }
+
+// ANSWER
+// ajout de pub devant fn get_secret_recipe() -> String pour rendre la fonction publique
+// ajout de pub devant fn make_sausage() pour rendre la fonction publique

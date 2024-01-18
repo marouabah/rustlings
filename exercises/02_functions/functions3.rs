@@ -3,10 +3,10 @@
 // Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn main() {
-    call_me();
+    let num = 3;
+    call_me(num);
 }
 
 fn call_me(num: u32) {
@@ -14,3 +14,6 @@ fn call_me(num: u32) {
         println!("Ring! Call number {}", i + 1);
     }
 }
+
+// ANSWER
+// creer une variable num dans la fonction main() et lui donner une valeur

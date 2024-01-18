@@ -13,7 +13,6 @@
 // Execute `rustlings hint intro1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn main() {
     println!("Hello and");
@@ -39,3 +38,6 @@ fn main() {
     );
     println!("up, and then run `rustlings lsp` before continuing.")
 }
+
+// ANSWER
+// supprimer le I AM NOT DONE

@@ -3,21 +3,19 @@
 // Execute `rustlings hint strings3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn trim_me(input: &str) -> String {
-    // TODO: Remove whitespace from both ends of a string!
-    ???
+    input.trim().to_string()
 }
 
 fn compose_me(input: &str) -> String {
-    // TODO: Add " world!" to the string! There's multiple ways to do this!
-    ???
+    let mut result = input.to_owned();
+    result.push_str(" world!");
+    result
 }
 
 fn replace_me(input: &str) -> String {
-    // TODO: Replace "cars" in the string with "balloons"!
-    ???
+    input.replace("cars", "balloons")
 }
 
 #[cfg(test)]
@@ -43,3 +41,8 @@ mod tests {
         assert_eq!(replace_me("I love to look at cars"), "I love to look at balloons");
     }
 }
+
+// ANSWER
+// ajout de input.trim() pour enlever les espaces au début et à la fin de la string
+// ajout de let mut result = input.to_owned(); pour copier la string dans result
+// ajout de input.replace("cars", "balloons") pour remplacer cars par balloons dans la string
