@@ -1,0 +1,13 @@
+// variables3.rs
+//
+// Execute `rustlings hint variables3` or use the `hint` watch subcommand for a
+// hint.
+
+
+fn main() {
+    let x: i32 =69;
+    println!("Number {}", x);
+}
+
+// ANSWER
+// Donner une valeur a x, exemple 69
